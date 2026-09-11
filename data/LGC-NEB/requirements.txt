@@ -1,0 +1,4 @@
+ase
+torch
+mace-torch
+nequip
