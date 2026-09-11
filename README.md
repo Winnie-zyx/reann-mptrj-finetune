@@ -9,7 +9,7 @@ This repository contains the REANN model source, inference interfaces, LAMMPS/AS
 - `ASE/`: ASE calculator and test examples
 - `lammps-interface/` and `lammps-REANN-interface/`: LAMMPS integration examples
 - `inference/`: inference utilities
-- `REANN_PES_DOUBLE.pt`: TorchScript checkpoint used by the ASE interface
+- `ASE/calculators/test/REANN_PES_DOUBLE.pt`: TorchScript checkpoint used by the ASE interface
 - `manual/manual.pdf`: original manual
 
 Obsolete dated/backup variants and the broken legacy `run/test_train.py` artifact were left out of the published tree. The original ZIP archive remains untouched on the desktop.
@@ -34,7 +34,7 @@ For multi-GPU training, increase `--nproc_per_node` and use a suitable distribut
 
 ## ASE inference
 
-`reann.py` loads a TorchScript checkpoint and exposes a calculator for energy and forces. Update the atom types, input structure, and checkpoint path in the example before running it. The bundled examples contain machine-specific paths and should be adapted to the local environment.
+`reann.py` loads a TorchScript checkpoint and exposes a calculator for energy and forces. Update the atom types, input structure, and checkpoint path (the bundled checkpoint is under `ASE/calculators/test/`) in the example before running it. The bundled examples contain machine-specific paths and should be adapted to the local environment.
 
 ## LAMMPS interface
 
