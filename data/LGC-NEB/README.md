@@ -50,18 +50,6 @@ data/LGC-NEB/
 │       ├── static_all_reann.py
 │       ├── static_mace.py
 │       └── static_nequip.py
-├── finetuning/
-│   ├── configurations/
-│   │   ├── configuration-LGC-AIMDsample-250
-│   │   └── configuration-MLMD-sample
-│   └── model_parameters/
-│       └── PES-LGC-AIMD-FT2.zip
-├── analysis/
-│   ├── scripts/
-│   │   └── similarity-tsne.py
-│   └── data/
-│       └── 11和19/
-│           └── 工作簿1.xlsx
 ├── MODEL_MANIFEST.md
 ├── README.md
 └── requirements.txt
